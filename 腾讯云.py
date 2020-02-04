@@ -7,12 +7,12 @@ from tencentcloud.common.exception.tencent_cloud_sdk_exception import TencentClo
 from tencentcloud.aai.v20180522.models import TextToVoiceRequest
 from tencentcloud.aai.v20180522.aai_client import AaiClient
 
-list1 = ['本草纲目上类似的千奇百怪的药方子确实不少，但我们并不认为《本草纲目》全是精华、没有糟粕，但是大部分内容还是有效的、也是经得起实践检验的本草纲目上类似的千奇百怪的药方子确实不少','但我们并不认为《本草纲目》全是精华、没有糟粕，但是大部分内容还是有效的、也是经得起实践检验的，《本草纲目》大部分都靠谱，但少部分则相当反人类，人非圣贤，孰能无过？', '因为中医在几千年的发展过程中，与道家等各类宗教不断互相影响，确实有匪夷所思的宗教甚至巫术的成分在里面。但不能就此否认中医中药没有价值，李时珍的《本草纲目》就是这样，','李时珍以一己之力、苦心孤诣十九年修订增补而成的《本草纲目》，在他的那个时代当然是了不起的成就。至于里面那些老遭受批评的奇葩药方，也不能完全怪李时珍，他也是摘录前人的记载药方而已。','某些前人留下的方子，李时珍也并不是亲自考证实验过的。我们要以客观的态度对待它，用其精华，弃其糟粕。']
+list1 = ['text1','text2']
 
 for i in range(len(list1)):
     # print ("序号：%s 值：%s" % (i + 1, list1[i]))
     # 实例化一个认证对象，入参需要传入腾讯云账户secretId，secretKey
-    cred = credential.Credential("AKIDUigPsDjmrgFYcNfWCi6GwaQ1UlmXZSeh", "we8MLTNJ4aruiQuY1FJ9k6PcfU4PDmwu")
+    cred = credential.Credential("AKIDUigPsDjmrgFYaQ1UlmXZSeh", "we8MLTN9k6PcfU4PDmwu")
     # 实例化要进行语音合成请求的client对象
     client = AaiClient(cred, 'ap-shanghai')
     # 实例化一个请求对象
